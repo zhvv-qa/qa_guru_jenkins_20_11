@@ -6,8 +6,8 @@ from selene import have, by
 
 
 @allure.title("Successful fill form")
-def setup_browser(request):
-    browser = browser_settings
+def setup_successful(setup_browser):
+    browser = setup_browser
     my_picture = 'testpion.jpeg'
 
     with allure.step("Open registrations form"):
